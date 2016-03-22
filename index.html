@@ -389,7 +389,7 @@
     </div>
 
     <!-- uiView: main --><div id="main" class="animate slide-up ng-scope layout-column flex" flex="" layout="column" ui-view="main"><div class="login-wrapper ng-scope layout-align-center-center layout-column flex" flex="" layout="column" layout-align="center center" ng-class="{&#39;withcaptcha&#39;: session.show_captcha}">
-<video autoplay="" loop="" data-poster="polina.jpg" id="bgvid" style=" position: fixed; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background-size: cover; ">
+<video autoplay="" loop="" data-poster="polina.jpg" id="bgvid" style="object-fit: cover; position: fixed; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background-size: cover; ">
     <source src="v.webm" type="video/webm">
     <source src="v.mp4" type="video/mp4">
 </video>
@@ -398,10 +398,10 @@
       <div class="logo" style="margin-bottom: 1rem;"></div>
       <md-content layout="column" layout-padding="" class="layout-padding layout-column">
         <md-input-container md-no-float="" class="md-input-has-placeholder md-input-has-value md-input-focused">
-          <input style="border-radius: 3px" type="text" aria-label="Username" ng-model="session.username" name="username" autofocus="true" placeholder="Login" ng-keypress="($event.which === 13)?session.login():0" class="ng-valid md-input ng-dirty ng-valid-parse ng-touched" id="input_0" tabindex="0" aria-invalid="false"><div class="md-errors-spacer"></div>
+          <input style="background-color: white; border-radius: 3px" type="text" aria-label="Username" ng-model="session.username" name="username" autofocus="true" placeholder="Login" ng-keypress="($event.which === 13)?session.login():0" class="ng-valid md-input ng-dirty ng-valid-parse ng-touched" id="input_0" tabindex="0" aria-invalid="false"><div class="md-errors-spacer"></div>
         </md-input-container>
         <md-input-container md-no-float="" class="md-input-has-placeholder md-input-has-value">
-          <input style="border-radius: 3px" type="password" aria-label="Password" ng-model="session.password" name="password" autocomplete="off" placeholder="Password" ng-keypress="($event.which === 13)?session.login():0" class="ng-untouched ng-valid md-input ng-dirty ng-valid-parse" id="input_1" tabindex="0" aria-invalid="false"><div class="md-errors-spacer"></div>
+          <input style="background-color: white; border-radius: 3px" type="password" aria-label="Password" ng-model="session.password" name="password" autocomplete="off" placeholder="Password" ng-keypress="($event.which === 13)?session.login():0" class="ng-untouched ng-valid md-input ng-dirty ng-valid-parse" id="input_1" tabindex="0" aria-invalid="false"><div class="md-errors-spacer"></div>
         </md-input-container>
         <!-- ngIf: session.show_captcha -->
         <button class="md-accent submit md-button md-ink-ripple" type="button" ng-transclude="" style="border-radius: 3px; margin-top: 4px; padding-top: 4px;" ng-click="session.login()" aria-label="Login" ng-disabled="session.logging" tabindex="0" aria-disabled="false"><span style="text-transform: uppercase;" ng-bind-template="Log In" class="ng-binding ng-scope">Log In</span></button>
@@ -425,3 +425,4 @@
   
 
 </body></html>
+
